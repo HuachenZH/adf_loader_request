@@ -1,3 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="b0538edd83adda10d41f99c6feaad3ac" extends="task" label="Loaner_request" max_length="40" name="x_823131_loaner_re_loaner_request" type="collection"/>
+    <element db_object_id="b0538edd83adda10d41f99c6feaad3ac" extends="task" label="Loaner_request" max_length="40" name="x_823131_loaner_re_loaner_request" type="collection">
+        <element label="Location to be used" max_length="2000" name="location_to_be_used" type="string"/>
+        <element label="Requested for" max_length="32" name="requested_for" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+    </element>
 </database>
